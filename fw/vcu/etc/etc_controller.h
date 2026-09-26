@@ -39,8 +39,9 @@ private:
     */
 
     /*  
-        !! IMPORTANT: ALL OF THE MIN/MAX VOLTAGES SHOULD BE !!
-        !! RETUNED VIA SERIAL BEFORE TESTING ANYTHING       !!
+        !! IMPORTANT: All voltages are based off an     !!
+        !! older testing time. Still, voltages should   !!
+        !! aways be checked and used.                   !!
     */
 
     static constexpr float APPS1_MIN_VOLTAGE = 0.396;
@@ -58,7 +59,7 @@ private:
 
     bool in_range(float value, float low, float high);
 
-    void update_implaus();
+    void update_implausibilities();
 };
 
 #endif
