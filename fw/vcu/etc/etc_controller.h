@@ -39,9 +39,9 @@ private:
     */
 
     /*  
-        !! IMPORTANT: All voltages are based off an     !!
-        !! older testing time. Still, voltages should   !!
-        !! aways be checked and used.                   !!
+        !! IMPORTANT: All global voltages are based off     !!
+        !! an older testing time. Still, voltages           !!
+        !! should always be checked and updated if wrong.   !!
     */
 
     static constexpr float APPS1_MIN_VOLTAGE = 0.396;
@@ -50,7 +50,7 @@ private:
     static constexpr float APPS2_MIN_VOLTAGE = 0.439f;
     static constexpr float APPS2_MAX_VOLTAGE = 1.133f;
 
-    static constexpr float PEDAL_DEADZONE_PERCENTAGE = 0.05;
+    static constexpr float PEDAL_DEADZONE_PERCENTAGE = 0.03;
 
     static constexpr int16_t MAX_TORQUE = 32767 * 0.1; // Multiplied by 0.1 for controlled 
                                                        // motor torque during onboarding.

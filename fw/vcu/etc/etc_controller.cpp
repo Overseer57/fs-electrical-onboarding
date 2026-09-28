@@ -20,14 +20,20 @@ float ETCController::clamp(float value) {}
 bool ETCController::in_range(float value, float low, float high) {}
 
 /*
-    Complicated method with the goal of refreshing voltages, pedal
-    positions, implausibilities, and motor torque demand.
+    Complicated method with the goal of refreshing voltages,
+    pedal positions, implausibilities, and motor torque demand.
 */
 void ETCController::update_state() {
     /*
         Retrieve both APPS sensor voltages, determine pedal
-        positions, then calculate a motor torque demand based off
-        the two positions.
+        positions from globally set variables in header file, 
+        then calculate a motor torque demand based off the 
+        average if the two positions. 
+
+        If you want an extra challenge, include the pedal
+        deadzone percentage when determining pedal positions. 
+        If you want to get really difficult, maybe even 
+        include your own pedal mapping to make it non linear!
     */
 
 
@@ -56,8 +62,9 @@ void ETCController::update_implausibilities() {
     */
 
     /*
-        Run timers and check their count(), may be different
-        place. Remember where you are.
+        Check how long each implaus has been active for and
+        update the actual implaus result if it's been active 
+        for too long.
     */
 
     

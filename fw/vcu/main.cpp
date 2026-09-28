@@ -2,6 +2,10 @@
 #include "mbed.h"
 #include <cstdio>
 
+ETCController etc{/* INSERT PIN NAMES FOR APPS 1 & 2 */};
+
+CAN can{PB_8, PB_9, 500000};
+
 // Predefined for use in main()
 void send_etc_CAN_messages();
 void send_sme_CAN_messages();
@@ -9,8 +13,16 @@ void send_sme_CAN_messages();
 int main() {
     printf("Hello World!!\n");
 
+    /*
+        Make send_CAN messages loop consistently
+        at 20hz (20 messages / second)
+    */
+
+
+
+    // No need to edit this while loop
     while (true) {
-        // Must implement in /etc/ subfolder
+        // Must implement in etc/ subfolder
         etc.update_state();
     }
 
