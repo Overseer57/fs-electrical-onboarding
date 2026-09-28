@@ -10,9 +10,11 @@
 extern UART_HandleTypeDef huart2;
 AnalogIn APPS1_adc{/* PIN FOR APPS1 */};
 AnalogIn APPS2_adc{/* PIN FOR APPS2 */};
+CAN can{PB_8, PB_9, 500000};
 
 ADC_HandleTypeDef *APPS1_hadc = &(((analogin_t*)&APPS1_adc)->handle);
 ADC_HandleTypeDef *APPS2_hadc = &(((analogin_t*)&APPS2_adc)->handle);
+CAN_HandleTypeDef *hcan = &(((can_t*)&can)->CanHandle);
 
 int main(void) {
 
