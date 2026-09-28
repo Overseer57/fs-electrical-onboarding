@@ -1,4 +1,4 @@
-**Welcome to Formula Slug LV Onboarding**
+**Welcome to Formula Slug Low Voltage Onboarding**
 
 In order to get to know you and your passions better, we are asking you to complete
 an open ended racecar-related project in one of a few formats. Our goal is not
