@@ -26,6 +26,9 @@ int main(void) {
             Add lines where you start the ADC, poll from it, then
             convert it to voltage from a 12 bit number.
 
+            Next, you should add two TIM_HandleTypeDef objects for
+            creating timers and using them for implaus checks.
+
             After confirming your approach works, try to research
             a way to get CAN communication going aswell.
         */
