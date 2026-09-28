@@ -43,3 +43,9 @@ with tons of helpful information. This guide will get you well on your way towar
 completing onboarding and getting on the electrical team at Formula Slug.
 
 [View the FS Firmware Onboarding Guide 26-27](https://docs.google.com/document/d/1gzXtD5qyJgARo-87Nuxqq9qUc0AAmL1TZiSR43iaq20/edit?usp=sharing)
+
+---
+
+Note: Clone this repository recursively (`git clone --recursive`). If you
+didn't, be sure to initialize the submodule: `git submodule init` _and_ `git
+submodule update`
